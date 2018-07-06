@@ -1,6 +1,6 @@
 export default (platformAdConfig, articleAdConfig) => ({
-  networkId: platformAdConfig.adUnit,
-  adUnit: platformAdConfig.networkId,
+  networkId: platformAdConfig.networkId,
+  adUnit: platformAdConfig.adUnit,
   pageTargeting: {
     Timeline: "0",
     edition: "tnl-english",
@@ -9,7 +9,6 @@ export default (platformAdConfig, articleAdConfig) => ({
     sec_id: platformAdConfig.sectionId,
     cont_type: "art",
     av: platformAdConfig.appVersion,
-    ft: "",
     kw: articleAdConfig.headline.toLowerCase().replace(/\s+/g, ","),
     st: "Member",
     aid: articleAdConfig.id,
@@ -21,12 +20,10 @@ export default (platformAdConfig, articleAdConfig) => ({
     env: platformAdConfig.environment,
     log: platformAdConfig.isLoggedIn ? "1" : "0",
     pid: platformAdConfig.cookieEid,
-    pos: "article_ad",
     vid: "",
     cips: platformAdConfig.cookieAcsTnl,
     "did#": platformAdConfig.deviceIdHash,
     path: platformAdConfig.sectionName,
-    slot: platformAdConfig.articlePositionInSlot,
     pform: platformAdConfig.platform,
     share_token: "",
     Timeline_Id: platformAdConfig.sectionName,
@@ -34,7 +31,13 @@ export default (platformAdConfig, articleAdConfig) => ({
     section: platformAdConfig.sectionName,
     excl_cat: ""
   },
-  slotTargeting: {},
+  slotTargeting: {
+    path: "/news",
+    section: "news",
+    sec_id: "null",
+    slot: "news",
+    zone: "current_edition"
+  },
   bidderSlots: [],
   biddersConfig: {}
 });

@@ -87,6 +87,7 @@ class DOMContext extends PureComponent {
         </body>
       </html>
     `;
+
     const postMessageBugWorkaround = Platform.select({
       // https://github.com/facebook/react-native/issues/10865
       ios: {

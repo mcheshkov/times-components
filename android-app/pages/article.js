@@ -18,20 +18,19 @@ const ArticlePageView = Article(config)(fetch);
 const platformAdConfig = {
   adUnit: "d.thetimes.co.uk",
   networkId: "25436805",
-  testMode: "",
-  sectionId: "",
-  sectionName: "",
-  articlePositionInSlot: 0,
-  appVersion: "",
-  operatingSystem: "",
-  operatingSystemVersion: "",
-  cookieEid: "",
-  cookieAcsTnl: "",
-  cookieIamTgt: "",
-  deviceId: "",
-  deviceIdHash: "",
-  environment: "",
-  isLoggedIn: true,
+  testMode: "", // from secret checkbox
+  sectionId: "????", // from native
+  sectionName: "News", // from native
+  appVersion: "1.10", // from native
+  operatingSystem: "android",
+  operatingSystemVersion: "1.1.0", // from native
+  cookieEid: "AAAA002920174", // from native
+  cookieAcsTnl: "", // from native
+  cookieIamTgt: "", // from native
+  deviceId: "wer", // from native
+  deviceIdHash: "wer", // from native
+  environment: "", // prod, qa
+  isLoggedIn: true, // from native
   platform: "mobile"
 };
 
