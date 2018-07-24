@@ -504,203 +504,170 @@ Object {
   },
   "publicationName": "TIMES",
   "publishedTime": "2015-03-13T18:54:58.000Z",
-  "relatedArticles": Array [
-    Object {
-      "__typename": "Article",
-      "byline": Array [
-        Object {
-          "attributes": Object {},
-          "children": Array [
-            Object {
-              "attributes": Object {
-                "value": "Patrick Kidd",
-              },
-              "children": Array [],
-              "name": "text",
+  "relatedArticleSlice": Object {
+    "__typename": "StandardSlice",
+    "items": Array [
+      Object {
+        "__typename": "Article",
+        "article": Object {
+          "__typename": "Article",
+          "headline": "TMS: Pratchett’s law of the jungle - Disable Saving",
+          "id": "ea16d744-cb4a-11e4-a202-50ac5def393a",
+          "label": "Health",
+          "leadAsset": Object {
+            "__typename": "Image",
+            "crop169": Object {
+              "__typename": "Crop",
+              "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9a9cf7c4b313584c4b1a231ffea56ad3154cc520.jpg?crop=780%2C439%2C0%2C40",
+              Symbol(id): "$Image:6c1c108e-ed63-47af-df1d-46c63be16627.crop({\\"ratio\\":\\"16:9\\"})",
             },
-          ],
-          "name": "inline",
-        },
-      ],
-      "headline": "TMS: Pratchett’s law of the jungle - Disable Saving",
-      "id": "ea16d744-cb4a-11e4-a202-50ac5def393a",
-      "label": "Health",
-      "leadAsset": Object {
-        "__typename": "Image",
-        "crop169": Object {
-          "__typename": "Crop",
-          "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9a9cf7c4b313584c4b1a231ffea56ad3154cc520.jpg?crop=780%2C439%2C0%2C40",
-          Symbol(id): "$Image:6c1c108e-ed63-47af-df1d-46c63be16627.crop({\\"ratio\\":\\"16:9\\"})",
-        },
-        "crop32": Object {
-          "__typename": "Crop",
-          "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9a9cf7c4b313584c4b1a231ffea56ad3154cc520.jpg?crop=780%2C520%2C0%2C0",
-          Symbol(id): "$Image:6c1c108e-ed63-47af-df1d-46c63be16627.crop({\\"ratio\\":\\"3:2\\"})",
-        },
-        "id": "6c1c108e-ed63-47af-df1d-46c63be16627",
-        "title": "TMS: Pratchett’s law of the jungle",
-        Symbol(id): "Image:6c1c108e-ed63-47af-df1d-46c63be16627",
-      },
-      "publicationName": "TIMES",
-      "publishedTime": "2015-03-23T19:39:39.000Z",
-      "section": "sport",
-      "summary125": Array [
-        Object {
-          "attributes": Object {},
-          "children": Array [
-            Object {
-              "attributes": Object {
-                "value": "Terry Pratchett, who died last week, began his career on the ",
-              },
-              "children": Array [],
-              "name": "text",
+            "crop32": Object {
+              "__typename": "Crop",
+              "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9a9cf7c4b313584c4b1a231ffea56ad3154cc520.jpg?crop=780%2C520%2C0%2C0",
+              Symbol(id): "$Image:6c1c108e-ed63-47af-df1d-46c63be16627.crop({\\"ratio\\":\\"3:2\\"})",
             },
+            "id": "6c1c108e-ed63-47af-df1d-46c63be16627",
+            "title": "TMS: Pratchett’s law of the jungle",
+            Symbol(id): "Image:6c1c108e-ed63-47af-df1d-46c63be16627",
+          },
+          "publicationName": "TIMES",
+          "publishedTime": "2015-03-23T19:39:39.000Z",
+          "section": "sport",
+          "summary125": Array [
             Object {
               "attributes": Object {},
               "children": Array [
                 Object {
                   "attributes": Object {
-                    "value": "Bucks Free Press",
+                    "value": "Terry Pratchett, who died last week, began his career on the ",
+                  },
+                  "children": Array [],
+                  "name": "text",
+                },
+                Object {
+                  "attributes": Object {},
+                  "children": Array [
+                    Object {
+                      "attributes": Object {
+                        "value": "Bucks Free Press",
+                      },
+                      "children": Array [],
+                      "name": "text",
+                    },
+                  ],
+                  "name": "italic",
+                },
+                Object {
+                  "attributes": Object {
+                    "value": " in 1965, aged 17, and the paper recalls in a",
                   },
                   "children": Array [],
                   "name": "text",
                 },
               ],
-              "name": "italic",
-            },
-            Object {
-              "attributes": Object {
-                "value": " in 1965, aged 17, and the paper recalls in a",
-              },
-              "children": Array [],
-              "name": "text",
+              "name": "paragraph",
             },
           ],
-          "name": "paragraph",
+          "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/tms-pratchetts-law-of-the-jungle-xgqrcw779",
+          Symbol(id): "Article:ea16d744-cb4a-11e4-a202-50ac5def393a",
         },
-      ],
-      "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/tms-pratchetts-law-of-the-jungle-xgqrcw779",
-      Symbol(id): "Article:ea16d744-cb4a-11e4-a202-50ac5def393a",
-    },
-    Object {
-      "__typename": "Article",
-      "byline": Array [
-        Object {
-          "attributes": Object {},
-          "children": Array [
-            Object {
-              "attributes": Object {
-                "value": "Graeme Paton Transport Correspondent",
-              },
-              "children": Array [],
-              "name": "text",
-            },
-          ],
-          "name": "inline",
-        },
-      ],
-      "headline": "Rise of centenarian drivers as elderly push on - V5 Premoderated Comments",
-      "id": "b09fc422-cb53-11e4-81dd-064fe933cd41",
-      "label": "Science",
-      "leadAsset": Object {
-        "__typename": "Image",
-        "crop169": Object {
-          "__typename": "Crop",
-          "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9a9cf7c4b313584c4b1a231ffea56ad3154cc520.jpg?crop=780%2C439%2C0%2C40",
-          Symbol(id): "$Image:6c1c108e-ed63-47af-df1d-46c63be16627.crop({\\"ratio\\":\\"16:9\\"})",
-        },
-        "crop32": Object {
-          "__typename": "Crop",
-          "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9a9cf7c4b313584c4b1a231ffea56ad3154cc520.jpg?crop=780%2C520%2C0%2C0",
-          Symbol(id): "$Image:6c1c108e-ed63-47af-df1d-46c63be16627.crop({\\"ratio\\":\\"3:2\\"})",
-        },
-        "id": "6c1c108e-ed63-47af-df1d-46c63be16627",
-        "title": "TMS: Pratchett’s law of the jungle",
-        Symbol(id): "Image:6c1c108e-ed63-47af-df1d-46c63be16627",
+        Symbol(id): "$Article:198c4b2f-ecec-4f34-be53-c89f83bc1b44.relatedArticleSlice.items.0",
       },
-      "publicationName": "TIMES",
-      "publishedTime": "2015-03-23T20:42:27.000Z",
-      "section": "comment",
-      "summary125": Array [
-        Object {
-          "attributes": Object {},
-          "children": Array [
+      Object {
+        "__typename": "Article",
+        "article": Object {
+          "__typename": "Article",
+          "headline": "Rise of centenarian drivers as elderly push on - V5 Premoderated Comments",
+          "id": "b09fc422-cb53-11e4-81dd-064fe933cd41",
+          "label": "Science",
+          "leadAsset": Object {
+            "__typename": "Image",
+            "crop169": Object {
+              "__typename": "Crop",
+              "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9a9cf7c4b313584c4b1a231ffea56ad3154cc520.jpg?crop=780%2C439%2C0%2C40",
+              Symbol(id): "$Image:6c1c108e-ed63-47af-df1d-46c63be16627.crop({\\"ratio\\":\\"16:9\\"})",
+            },
+            "crop32": Object {
+              "__typename": "Crop",
+              "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9a9cf7c4b313584c4b1a231ffea56ad3154cc520.jpg?crop=780%2C520%2C0%2C0",
+              Symbol(id): "$Image:6c1c108e-ed63-47af-df1d-46c63be16627.crop({\\"ratio\\":\\"3:2\\"})",
+            },
+            "id": "6c1c108e-ed63-47af-df1d-46c63be16627",
+            "title": "TMS: Pratchett’s law of the jungle",
+            Symbol(id): "Image:6c1c108e-ed63-47af-df1d-46c63be16627",
+          },
+          "publicationName": "TIMES",
+          "publishedTime": "2015-03-23T20:42:27.000Z",
+          "section": "comment",
+          "summary125": Array [
             Object {
-              "attributes": Object {
-                "value": "More than 200 motorists are still on the road after celebrating their 100th birthday as older people become increasingly",
-              },
-              "children": Array [],
-              "name": "text",
+              "attributes": Object {},
+              "children": Array [
+                Object {
+                  "attributes": Object {
+                    "value": "More than 200 motorists are still on the road after celebrating their 100th birthday as older people become increasingly",
+                  },
+                  "children": Array [],
+                  "name": "text",
+                },
+              ],
+              "name": "paragraph",
             },
           ],
-          "name": "paragraph",
+          "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/rise-of-centenarian-drivers-as-elderly-push-on-6gb0bjnpz",
+          Symbol(id): "Article:b09fc422-cb53-11e4-81dd-064fe933cd41",
         },
-      ],
-      "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/rise-of-centenarian-drivers-as-elderly-push-on-6gb0bjnpz",
-      Symbol(id): "Article:b09fc422-cb53-11e4-81dd-064fe933cd41",
-    },
-    Object {
-      "__typename": "Article",
-      "byline": Array [
-        Object {
-          "attributes": Object {},
-          "children": Array [
-            Object {
-              "attributes": Object {
-                "value": "Jack Malvern Arts Correspondent Dominic Kennedy",
-              },
-              "children": Array [],
-              "name": "text",
-            },
-          ],
-          "name": "inline",
-        },
-      ],
-      "headline": "Syndicated url: At long last, a burial place fit for a king",
-      "id": "8557a3d2-cb55-11e4-81dd-064fe933cd41",
-      "label": "Science",
-      "leadAsset": Object {
-        "__typename": "Image",
-        "crop169": Object {
-          "__typename": "Crop",
-          "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9a9cf7c4b313584c4b1a231ffea56ad3154cc520.jpg?crop=780%2C439%2C0%2C40",
-          Symbol(id): "$Image:6c1c108e-ed63-47af-df1d-46c63be16627.crop({\\"ratio\\":\\"16:9\\"})",
-        },
-        "crop32": Object {
-          "__typename": "Crop",
-          "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9a9cf7c4b313584c4b1a231ffea56ad3154cc520.jpg?crop=780%2C520%2C0%2C0",
-          Symbol(id): "$Image:6c1c108e-ed63-47af-df1d-46c63be16627.crop({\\"ratio\\":\\"3:2\\"})",
-        },
-        "id": "6c1c108e-ed63-47af-df1d-46c63be16627",
-        "title": "TMS: Pratchett’s law of the jungle",
-        Symbol(id): "Image:6c1c108e-ed63-47af-df1d-46c63be16627",
+        Symbol(id): "$Article:198c4b2f-ecec-4f34-be53-c89f83bc1b44.relatedArticleSlice.items.1",
       },
-      "publicationName": "TIMES",
-      "publishedTime": "2015-03-23T20:56:09.000Z",
-      "section": "thedish",
-      "summary125": Array [
-        Object {
-          "attributes": Object {},
-          "children": Array [
+      Object {
+        "__typename": "Article",
+        "article": Object {
+          "__typename": "Article",
+          "headline": "Syndicated url: At long last, a burial place fit for a king",
+          "id": "8557a3d2-cb55-11e4-81dd-064fe933cd41",
+          "label": "Science",
+          "leadAsset": Object {
+            "__typename": "Image",
+            "crop169": Object {
+              "__typename": "Crop",
+              "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9a9cf7c4b313584c4b1a231ffea56ad3154cc520.jpg?crop=780%2C439%2C0%2C40",
+              Symbol(id): "$Image:6c1c108e-ed63-47af-df1d-46c63be16627.crop({\\"ratio\\":\\"16:9\\"})",
+            },
+            "crop32": Object {
+              "__typename": "Crop",
+              "url": "//nu-cps-imgsrv-tnl-dev-webapp.elb.tnl-dev.ntch.co.uk/imageserver/image/9a9cf7c4b313584c4b1a231ffea56ad3154cc520.jpg?crop=780%2C520%2C0%2C0",
+              Symbol(id): "$Image:6c1c108e-ed63-47af-df1d-46c63be16627.crop({\\"ratio\\":\\"3:2\\"})",
+            },
+            "id": "6c1c108e-ed63-47af-df1d-46c63be16627",
+            "title": "TMS: Pratchett’s law of the jungle",
+            Symbol(id): "Image:6c1c108e-ed63-47af-df1d-46c63be16627",
+          },
+          "publicationName": "TIMES",
+          "publishedTime": "2015-03-23T20:56:09.000Z",
+          "section": "thedish",
+          "summary125": Array [
             Object {
-              "attributes": Object {
-                "value": "It has been 530 years in the coming, but Richard III will finally be reburied with honour next week — and the late king can",
-              },
-              "children": Array [],
-              "name": "text",
+              "attributes": Object {},
+              "children": Array [
+                Object {
+                  "attributes": Object {
+                    "value": "It has been 530 years in the coming, but Richard III will finally be reburied with honour next week — and the late king can",
+                  },
+                  "children": Array [],
+                  "name": "text",
+                },
+              ],
+              "name": "paragraph",
             },
           ],
-          "name": "paragraph",
+          "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/at-long-last-a-burial-place-fit-for-a-king-25l88wl2k",
+          Symbol(id): "Article:8557a3d2-cb55-11e4-81dd-064fe933cd41",
         },
-      ],
-      "url": "http://cps-render-ci.elb.tnl-dev.ntch.co.uk/article/at-long-last-a-burial-place-fit-for-a-king-25l88wl2k",
-      Symbol(id): "Article:8557a3d2-cb55-11e4-81dd-064fe933cd41",
-    },
-  ],
-  "relatedArticlesLayout": Object {
-    "__typename": "Default",
-    "template": "DEFAULT",
-    Symbol(id): "$Article:198c4b2f-ecec-4f34-be53-c89f83bc1b44.relatedArticlesLayout",
+        Symbol(id): "$Article:198c4b2f-ecec-4f34-be53-c89f83bc1b44.relatedArticleSlice.items.2",
+      },
+    ],
+    "type": "StandardSlice",
+    Symbol(id): "$Article:198c4b2f-ecec-4f34-be53-c89f83bc1b44.relatedArticleSlice",
   },
   "section": "business",
   "standfirst": "How did one of Britain’s top young athletes end up running elite parties for swingers? Chris Reynolds Gordon tells Rick Broadbent about his extraordinary life",

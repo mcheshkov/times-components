@@ -34,16 +34,7 @@ export const query = gql`
         }
       }
       relatedArticleSlice {
-        ...on StandardSlice {
-          type: __typename
-          items {
-            article {
-              ...articleProps
-
-            }
-          }
-        }
-        ...on LeadOneAndTwoSlice {
+        ... on StandardSlice {
           type: __typename
           items {
             article {
@@ -51,7 +42,15 @@ export const query = gql`
             }
           }
         }
-        ...on OpinionOneAndTwoSlice {
+        ... on LeadOneAndTwoSlice {
+          type: __typename
+          items {
+            article {
+              ...articleProps
+            }
+          }
+        }
+        ... on OpinionOneAndTwoSlice {
           type: __typename
           items {
             article {
@@ -79,7 +78,7 @@ export const query = gql`
   }
 
   fragment articleProps on Article {
-  	id
+    id
     headline
     section
     label
