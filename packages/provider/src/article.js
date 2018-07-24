@@ -33,36 +33,31 @@ export const query = gql`
           ...imageProps
         }
       }
-      relatedArticles {
-        id
-        headline
-        section
-        byline
-        label
-        publicationName
-        publishedTime
-        summary125: summary(maxCharCount: 125)
-        leadAsset {
-          ... on Image {
-            id
-            title
-            crop169: crop(ratio: "16:9") {
-              url
-            }
-            crop32: crop(ratio: "3:2") {
-              url
+      relatedArticleSlice {
+        ...on StandardSlice {
+          type: __typename
+          items {
+            article {
+              ...articleProps
+
             }
           }
         }
-        url
-      }
-      relatedArticlesLayout {
-        template
-        ... on LeadAndTwo {
-          main
+        ...on LeadOneAndTwoSlice {
+          type: __typename
+          items {
+            article {
+              ...articleProps
+            }
+          }
         }
-        ... on OpinionAndTwo {
-          main
+        ...on OpinionOneAndTwoSlice {
+          type: __typename
+          items {
+            article {
+              ...articleProps
+            }
+          }
         }
       }
       topics {
@@ -81,6 +76,29 @@ export const query = gql`
       ratio
       url
     }
+  }
+
+  fragment articleProps on Article {
+  	id
+    headline
+    section
+    label
+    publicationName
+    publishedTime
+    summary125: summary(maxCharCount: 125)
+    leadAsset {
+      ... on Image {
+        id
+        title
+        crop169: crop(ratio: "16:9") {
+          url
+        }
+        crop32: crop(ratio: "3:2") {
+          url
+        }
+      }
+    }
+    url
   }
 `;
 
