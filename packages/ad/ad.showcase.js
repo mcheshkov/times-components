@@ -32,12 +32,14 @@ const withOpenInNewWindow = children => {
     );
 
   return (
-    <AdComposer adConfig={adConfig}>
-      <View>
-        {link}
+    <View>
+      {link}
+      <Text>Ad should show beneath this text.</Text>
+      <AdComposer adConfig={adConfig}>
         {children}
-      </View>
-    </AdComposer>
+      </AdComposer>
+      <Text>Ad should show above this text.</Text>
+    </View>
   );
 };
 
