@@ -1,7 +1,7 @@
 /* eslint-env browser */
 /* eslint-disable react/prop-types */
-import React, { Fragment } from "react";
-import { Text } from "react-native";
+import React from "react";
+import { Text, View } from "react-native";
 import AdPlaceholder from "./src/ad-placeholder";
 import Ad, { AdComposer } from "./src/ad";
 import adConfig from "./fixtures/article-ad-config.json";
@@ -33,10 +33,10 @@ const withOpenInNewWindow = children => {
 
   return (
     <AdComposer adConfig={adConfig}>
-      <Fragment>
+      <View>
         {link}
         {children}
-      </Fragment>
+      </View>
     </AdComposer>
   );
 };
@@ -53,14 +53,14 @@ const articleContextURL =
   "https://www.thetimes.co.uk/edition/news/france-defies-may-over-russia-37b27qd2s";
 
 const renderAd = slotName => (
-  <Fragment>
+  <View>
     {slotName.indexOf("pixel") !== -1 && (
       <Text style={{ display: "block" }}>
         The pixel ad is below. It&rsquo;s invisible.
       </Text>
     )}
     <Ad contextUrl={articleContextURL} section="news" slotName={slotName} />
-  </Fragment>
+  </View>
 );
 
 export default {
@@ -82,14 +82,14 @@ export default {
       type: "story",
       name: "Ad Loading State",
       component: () =>
-        withOpenInNewWindow(
+        <AdComposer adConfig={adConfig}>
           <Ad
             contextUrl={articleContextURL}
             isLoading
             section="news"
             slotName="header"
           />
-        )
+        </AdComposer>
     },
     {
       type: "story",
