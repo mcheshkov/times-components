@@ -34,11 +34,11 @@ const withOpenInNewWindow = children => {
   return (
     <View>
       {link}
-      <Text>Ad should show beneath this text.</Text>
+      <Text>Ads should show beneath this text.</Text>
       <AdComposer adConfig={adConfig}>
         {children}
       </AdComposer>
-      <Text>Ad should show above this text.</Text>
+      <Text>Ads should show above this text.</Text>
     </View>
   );
 };
@@ -70,7 +70,7 @@ export default {
   children: [
     {
       type: "story",
-      name: "Placeholder",
+      name: "Placeholder - Variable Sizes",
       component: ({ selectV2 }) =>
         renderAdPlaceholder(
           selectV2(
@@ -95,11 +95,51 @@ export default {
     },
     {
       type: "story",
-      name: "Ad",
+      name: "Ad Blocked For Brand Protection",
+      component: () => {
+        const brandProtectedAdConfig = {
+          ...adConfig,
+          pageTargeting: {
+            ...adConfig.pageTargeting,
+            kw: "parsons,green,attack,i,was,recruited,by,isis,they,trained,us,on,how,to,kill"
+          }
+        };
+
+        return withOpenInNewWindow(
+          <AdComposer adConfig={brandProtectedAdConfig}>
+            <Ad
+              contextUrl="https://www.thetimes.co.uk/edition/news/teacher-saw-whatsapp-from-isis-on-bombers-phone-0clnddtw0"
+              section="news"
+              slotName="header"
+            />
+          </AdComposer>
+        );
+      }
+    },
+    {
+      type: "story",
+      name: "Ad - Variable Sizes",
       component: ({ selectV2 }) =>
         withOpenInNewWindow(
           renderAd(selectV2("Slot Name:", slotNames, slotNames[1]))
         )
+    },
+    {
+      type: "story",
+      name: "Multiple Ads",
+      component: () => {
+        const Children = (
+          <View>
+            {
+              renderAd("ad-1")
+            }
+            {
+              renderAd("ad-2")
+            }
+          </View>
+        )
+        return withOpenInNewWindow(Children);
+      }
     }
   ]
 };
