@@ -4,6 +4,7 @@ import {
   ParagraphContainer,
   Paragraph
 } from "../styles/article-body/responsive";
+import { ThemeContext } from "@times-components/theme";
 import styles from "../styles/article-body";
 
 const BodyParagraph = props => (

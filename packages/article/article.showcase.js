@@ -9,6 +9,8 @@ import StorybookProvider from "@times-components/storybook/storybook-provider";
 import storybookReporter from "@times-components/tealium-utils";
 import Article from "./src/article";
 
+import { ThemeContext } from "@times-components/theme";
+
 import fullArticleFixture, {
   bylineWithLink,
   longContent,
@@ -125,32 +127,34 @@ export default {
 
         return (
           <StorybookProvider mocks={mocks}>
-            <ArticleProvider
-              debounceTimeMs={0}
-              id={overrideArticleId || predefinedArticle}
-            >
-              {({ article, isLoading, error }) => (
-                <Article
-                  adConfig={articleAdConfig}
-                  analyticsStream={storybookReporter}
-                  article={article}
-                  error={error}
-                  isLoading={isLoading}
-                  onAuthorPress={preventDefaultedAction(decorateAction)(
-                    "onAuthorPress"
-                  )}
-                  onLinkPress={preventDefaultedAction(decorateAction)(
-                    "onLinkPress"
-                  )}
-                  onRelatedArticlePress={preventDefaultedAction(decorateAction)(
-                    "onRelatedArticlePress"
-                  )}
-                  onTopicPress={preventDefaultedAction(decorateAction)(
-                    "onTopicPress"
-                  )}
-                />
-              )}
-            </ArticleProvider>
+            <ThemeContext.Provider value="regular">
+              <ArticleProvider
+                debounceTimeMs={0}
+                id={overrideArticleId || predefinedArticle}
+              >
+                {({ article, isLoading, error }) => (
+                  <Article
+                    adConfig={articleAdConfig}
+                    analyticsStream={storybookReporter}
+                    article={article}
+                    error={error}
+                    isLoading={isLoading}
+                    onAuthorPress={preventDefaultedAction(decorateAction)(
+                      "onAuthorPress"
+                    )}
+                    onLinkPress={preventDefaultedAction(decorateAction)(
+                      "onLinkPress"
+                    )}
+                    onRelatedArticlePress={preventDefaultedAction(decorateAction)(
+                      "onRelatedArticlePress"
+                    )}
+                    onTopicPress={preventDefaultedAction(decorateAction)(
+                      "onTopicPress"
+                    )}
+                  />
+                )}
+              </ArticleProvider>
+            </ThemeContext.Provider>
           </StorybookProvider>
         );
       }
