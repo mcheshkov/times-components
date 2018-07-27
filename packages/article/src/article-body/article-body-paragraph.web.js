@@ -8,12 +8,16 @@ import { ThemeContext } from "@times-components/theme";
 import styles from "../styles/article-body";
 
 const BodyParagraph = props => (
-  <ParagraphContainer
-    key={`paragraph-${props.uid}`}
-    style={[styles.articleMainContentRow]}
-  >
-    <Paragraph style={[styles.articleTextElement]}>{props.children}</Paragraph>
-  </ParagraphContainer>
+  <ThemeContext.Consumer>
+    {theme =>
+      <ParagraphContainer
+        key={`paragraph-${props.uid}`}
+        style={styles.articleMainContentRow}
+      >
+        <Paragraph style={styles.articleTextElement}>{props.children}</Paragraph>
+      </ParagraphContainer>
+      }
+  </ThemeContext.Consumer>
 );
 
 BodyParagraph.propTypes = {
