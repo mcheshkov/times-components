@@ -9,7 +9,7 @@ const fontSizes = scale => {
     case "xlarge":
       return {
         ...defaultSizes,
-        bodyMobile: 24
+        bodyMobile: 30
       };
     case "large":
       return {

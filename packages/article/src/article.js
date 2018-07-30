@@ -17,6 +17,7 @@ import styles from "./styles/article-body";
 import { articlePropTypes, articleDefaultProps } from "./article-prop-types";
 import articleTrackingContext from "./article-tracking-context";
 import listViewDataHelper from "./data-helper";
+import ArticleThemeContext from "./article-theme"
 
 const listViewPageSize = 1;
 const listViewSize = 10;
@@ -151,7 +152,9 @@ class ArticlePage extends Component {
     );
 
     return (
-      <AdComposer adConfig={this.props.adConfig}>{ArticleListView}</AdComposer>
+      <ArticleThemeContext.Provider value={{ scale: this.props.fontSize }}>
+        <AdComposer adConfig={this.props.adConfig}>{ArticleListView}</AdComposer>
+      </ArticleThemeContext.Provider>
     );
   }
 }
