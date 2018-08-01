@@ -5,7 +5,7 @@ import propTypes from "./key-facts-title-prop-types";
 import styles from "./styles";
 
 const KeyFactsTitle = ({ title }) => (
-  <Text style={styles.title}>{androidLetterSpacing(title)}</Text>
+  <Text style={styles().title}>{androidLetterSpacing(title)}</Text>
 );
 
 KeyFactsTitle.propTypes = propTypes;
